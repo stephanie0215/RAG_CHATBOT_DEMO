@@ -1,0 +1,18 @@
+{
+    "OPENAI_API_KEY": "your-key",
+    "MAX_CONTEXT_LENGTHS": {
+        "gpt-3.5-turbo-1106": 16385,
+        "gpt-4": 8192,
+        "gpt-4-0125-preview": 128000,
+        "gpt-4-turbo" : 128000
+    },
+    "CHUNKS" :{
+        "500" : { "json_file" : "chunks/ChunkSize500.json",
+                  "lexial_index_file" : "chunks/ChunkSize500_LexicalIndex",
+                  "chromadb_collection" : "ChunkSize500Collection"}
+    },
+    "FILE_ID" : {
+     "電動輔助自行車及微型電動二輪車型式安全審驗管理辦法_統整.pdf" : "RoadTrafficSafetyRules",
+     "從2023台北國際自行車展看指標廠商關鍵技術布局.pdf" : "LookingAtTheKeyTechnologyLayoutOfIndicatorManufacturersFromThe2023TaipeiInternationalBicycleExhibition"
+    }
+}
