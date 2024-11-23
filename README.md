@@ -1,3 +1,61 @@
+# Project Overview
+
+This project aims to build a chatbot that responds to user queries using the Retrieval-Augmented Generation (RAG) framework, delivering accurate and contextually relevant answers.
+
+---
+
+## Environment Setup
+
+1. **Python Version**: 3.8.8  
+2. **SQLite Version**: > 3.35 (required for ChromaDB, the vector database)  
+3. **Dependencies**: Install all required packages using:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. **API Key Configuration**:  
+   Update the `config.json` file located in the `code` directory. Add your OpenAI API key to the file before running the code.
+
+---
+
+## Program Description
+
+### 1. **Query Module**
+- **File**: `demo_Query.py`  
+- **Description**:  
+  This script performs simple Q&A operations. All functions and classes used in this script are defined in `QueryAndEvaluation.py`.
+
+### 2. **Query and Evaluation Module**
+- **File**: `demo_QueryAndEvaluation.py`  
+- **Description**:  
+  This script evaluates responses under different parameter settings.  
+  - The results are saved as both `.csv` and `.xlsx` files for comparison and analysis.  
+  - The goal is to determine the optimal parameter configuration.  
+  - All functions and classes used are located in `QueryAndEvaluation.py`.
+
+### 3. **Data Processing Module**
+- **File**: `Data_Processing.py`  
+- **Description**:  
+  This script handles:
+  - Storing text chunks in the vector database.
+  - Saving data as `.json` files.
+  - Creating related lexical index files.
+  - By default, it creates a vector database with text chunks of length 500.  
+    To test other chunk sizes, use this script to create the corresponding vector database and related files.
+
+---
+
+## Notes
+
+- Ensure your environment meets the requirements before running any scripts.
+- Update the `config.json` file with valid API credentials for seamless functionality.
+- Experiment with different parameter settings using the `Query and Evaluation` module to refine performance.
+
+---
+
+
+
+
+
 如何使用此程式？
 
 - 環境設置：
